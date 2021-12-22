@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200;1,300;1,400&family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,400&family=Raleway:wght@100;300;400;500;600&display=swap');
+
+* {
+     font-family: 'Raleway', sans-serif;
+     margin: 0; padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     outline: none;
+     border: none;
+     text-transform: capitalize;
+     transition: all .2s linear;
+}
+
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+     scroll-padding-top: 8rem;
+     overflow-x: hidden;
+    
+     &::-webkit-scrollbar {
+          width: 1rem;
+     }
+
+     &::-webkit-scrollbar-track {
+          background: transparent;
+     }
+
+     &::-webkit-scrollbar-thumb {
+          background: #eacf4f;
+          border-radius: 5rem;
+     }
+}
+
+body {
+     background: url(/images/background.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     overflow: hidden;
+}
+
+.section {
+     padding: 3rem 9%;
+}
+
+.heading {
+     text-align: center;
+     margin-bottom: 3rem;
+}
+
+.heading h3 {
+     font-size: 3rem;
+     text-transform: uppercase;
+     color:#fff;
+     margin-top: 1rem;
+}
+
+.header {
+     position: fixed;
+     top: 0; left: 0; right: 0;
+     z-index: 1000;
+     background: #000;
+     padding: 3rem 9%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 1rem;
+}
+
+.icons {
+     font-size: 2.5rem;
+     cursor: pointer;
+     color: #fff;
+}
+
+.icons:hover {
+     color: #eacf4f;
+}
+
+#menu-btn {
+     display: none;
+}
+
+.navbar.active {
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.navbar a {
+     font-size: 2rem;
+     color: #fff;
+     margin: 0 2rem;
+}
+
+.navbar a:hover{
+     text-decoration: underline;
+     text-underline-offset: 1rem;
+     color: #eacf4f;
+}
+
+.space {
+     display: inline-block;
+     width: 16rem;
+}
+
+.logo {
+     position: absolute;
+     top: 3rem;
+     left: 48.5%;
+     transform: translateX(-50%);
+}
+
+.logo img {
+     width: 15rem;
+}
+
+.search-form {
+     height: 7rem;
+     padding: 0 2rem;
+     border-top: .2rem solid rgba(255, 255, 255, .3s);
+     display: flex;
+     align-items: center;
+     background: #000;
+     position: absolute;
+     top:99%; left: 0; right: 0; 
+     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+
+.search-form.active {
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+.search-form > input{
+     width: 100%;
+     background: none;
+     text-transform: none;
+     font-size: 1.6rem;
+     color: #fff;
+}
+
+.fa-times {
+     transform: rotate(180deg);
+}
+
+.search-form > label {
+     font-size: 2.5rem;
+     color: #fff;
+     cursor: pointer;
+} 
+
+.search-form > label:hover {
+     color: #eacf4f;
+}
+
+.btn {
+     display: inline-block;
+     margin-top: 1rem;
+     cursor: pointer;
+     color: #fff;
+     border: .2rem solid rgba(255, 255, 255, .3);
+     background: no-repeat;
+     font-size: 1.7rem;
+     padding: 1rem 3rem;
+}
+
+.btn:hover {
+     background-color: #fff;
+     color: #000;
+}
+
+ .home {
+      margin-top: 7rem;
+      background: url(/images/home-bg.png);
+      background-size: cover;
+      background-position: center;
+ }
+
+ .content {
+      max-width: 70rem;
+      text-align: center;
+      margin: 0 auto;
+ }
+
+ .content img {
+      width: 70%;
+ }
+
+ .content  h3{
+     font-size:3rem;
+     text-transform: uppercase;
+     color:#fff;
+  }
+
+ .content  p{
+     font-size: 1.5rem;
+     line-height: 2;
+     color:#aaa;
+     padding: 2rem 0;
+  }
+
+.service {
+     overflow-x: hidden;
+    
+ }
+
+.box-shipping {
+     text-align: center;
+     padding: 5rem 2rem;
+  
+}
+
+.box-shipping i {
+     height: 7rem;
+     width: 7rem;
+     line-height: 7rem;
+     font-size: 2rem;
+     color: #000;
+     background-color: #eacf4f;
+     margin-bottom: 1rem;
+     border-radius: 60%;
+}
+
+.box-shipping h3 {
+     padding: 1rem 0;
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.box-shipping p {
+     font-size: 1.5rem;
+     line-height: 2;
+     color:#aaa;
+}
+
+
+.menu {
+     overflow-x: hidden;
+}
+.box {
+     text-align: center;
+}
+
+.box img:hover {
+     transform: translateY(1rem);
+}
+
+.box h3 {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.price {
+     font-size: 2rem;
+     line-height: 2;
+     color:#aaa;
+}
+
+.box img {
+     height: 25rem;
+}
+
+.content {
+     padding: 1rem 0;
+}
+
+.stars i{
+     font-size: 1.7rem;
+     color: #eacf4f;
+     margin-bottom: 2rem;
+}
+
+.about {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 3rem;
+}
+
+.image {
+     flex: 1 1 40rem;
+}
+
+.image img {
+     width: 100%;
+
+}
+
+.content-about {
+     flex: 1 1 40rem;
+}
+
+.title {
+     font-size: 2.5rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.content-about p {
+     font-size: 1.5rem;
+     line-height: 2;
+     color:#aaa;
+     padding: 2rem 0;
+}
+
+.icons-about {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-bottom: 2rem;
+     margin-top: 1rem;
+}
+
+.icons-about h3 {
+     flex: 1 1 16rem;
+     font-size: 1.7rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.icons-about i {
+     padding-right: .5rem;
+     color: #eacf4f;
+}
+
+.box-review {
+     text-align: center;
+     padding: 2rem;
+}
+
+.box-review img {
+     height: 10rem;
+     width: 10rem;
+     border-radius: 50%;
+     margin-bottom: 1rem;
+}
+
+.box-review h3 {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.box-review p {
+     font-size: 1.4rem;
+     line-height: 2;
+     color:#aaa;
+     padding: 1rem 0;
+}
+
+.stars-reviews {
+     padding-top: 3rem;
+}
+
+.stars-reviews i {
+     font-size: 1.5rem;
+     color: #eacf4f;
+}
+
+
+.contact {
+     margin-top: 5rem;
+}
+.map {
+   margin-left: 2rem;
+    margin-top: 13em;
+    height: 41rem;
+    width: 42rem;
+}
+
+.form {
+     flex: 1 1 40rem;
+}
+
+.form-message {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;  
+     text-align: center;
+}
+
+.box-message {
+     padding: 1rem 1.4rem;
+     font-size: 1.6rem;
+     color: #fff;
+     background: none;
+     border: .2rem solid rgba(255, 255, 255, .3);
+     text-transform: none;
+     width: 90%;
+     margin: .7rem 2rem;
+}
+input.btn {
+    margin-left: 32rem;
+}
+.box-message textarea {
+     height: 15rem;
+     resize: none;
+}
+
+.box-message:focus {
+     border-radius: #eacf4f;
+}
+
+.icons-map h3 {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.icons-map p {
+     font-size: 1.5rem;
+     line-height: 2;
+     color:#aaa;
+}
+
+.icons-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0;
+     margin-top: 1rem;
+      /* padding: 0 10rem; */
+}
+
+.icons-map {
+     flex: 1 1 5rem;
+     text-align: center;
+}
+
+.icons-map i {
+     height: 6rem;
+     width: 6rem;
+     line-height: 6rem;
+     border-radius: 50%;
+     background: #eacf4f;
+     color: #000;
+     font-size: 2rem;
+     margin-bottom: 1rem;
+}
+
+.box__blogs-container {
+     position: relative;
+}
+
+.blogs {
+     margin-top: 8rem;
+}
+
+.img-blogs {
+     position: relative;
+     overflow: hidden;
+     height: 25rem;
+}
+
+.img-blogs img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+
+.icons-blogs {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem;
+     background: #000;
+     position: absolute;
+     bottom: 0; left: 0; right: 0;
+     z-index: 10;
+     /* transform: translateY(10rem); */
+}
+
+
+.box-blogs img:hover {
+     transform: scale(1.1);
+}
+
+
+
+/* .img-blogs img:hover .icons-blogs {
+     transform: translateY(0);
+} */
+
+.icons-blogs a {
+     font-size: 1.5 rem;
+     color: #fff;
+}
+
+.icons-blogs i {
+     padding-right: .5rem;
+}
+
+.icons-blogs i:hover {
+     color: #eacf4f;
+}
+
+.content-blogs {
+     text-align: center;
+     padding: 2rem;
+}
+
+.content-blogs h3 {
+     font-size: 2rem;
+     text-transform: uppercase;
+     color:#fff;
+}
+
+.content-blogs p {
+     font-size: 1.5rem;
+     line-height: 2;
+     color:#aaa;
+     padding: 1.5rem 0;
+}
+
+.footer {
+     margin-top: 2rem;
+     text-align: center;
+     background: linear-gradient(transparent, #000);
+}
+
+.links a {
+     margin: 1rem;
+}
+
+.credit {
+     font-size: 2rem;
+     line-height: 2;
+     color:#aaa;
+     padding-top: 1.5rem;
+}
+
+.credit span {
+     color: #eacf4f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width: 1200px) {
+     .header {
+          padding: 3rem;
+     }
+
+     .section {
+     padding: 3rem 2rem;
+}
+}
+
+
+/* Tablet and Mobile */
+@media (max-width: 991px) {
+
+     html {
+          font-size: 50%;
+     }
+
+     .header {
+          justify-content: flex-end;
+          gap: 2rem;
+     }
+
+     .logo {
+          transform: translateX(0);
+          left: 3rem;
+     }
+     #menu-btn {
+          display: inline-block;
+     }
+
+     .navbar {
+          position: absolute;
+          top: 99%; left:0; right: 0;
+          background: #000;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     }
+
+     .navbar a{
+          display: block;
+          margin: 2rem;
+     }
+
+     .space {
+          display: none;
+     }
+
+     .content img {
+      width: 40%;
+ }
+
+     .content-about {
+          transform: translateX(3rem);
+     }
+
+     .content-about p {
+      flex-wrap: wrap;
+     }
+
+     .icons-about {
+       white-space: nowrap;
+     }
+
+     .content-about .btn {
+          transform: translateX(1rem);
+     }
+
+     .reviews .heading {
+          margin-top: 5rem;
+     }
+
+     input.btn {
+    margin-left: 15rem;
+}
+
+    
+}
+
+/* table pro */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) {
+     html {
+          font-size: 60%;
+     }
+
+     input.btn {
+    margin-left: 38rem;
+}
+
+}
+
+
+@media (max-width: 768px) {
+     .home .content h3 {
+          font-size: 2.5rem;
+     }
+
+
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+     html {
+          font-size: 45%;
+     }
+
+       .icons-container {
+          display: block;
+     }
+
+}
